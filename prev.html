@@ -17,12 +17,26 @@
         showButtonPanel: true // Display the close button
       });
     });
+
+
+    $(function() {
+      // Set up the datepicker
+      $("#ndatepicker").datepicker({
+        minDate: 1, // Restrict to next dates
+        dateFormat: 'yy-mm-dd', // Set the date format
+        showButtonPanel: true // Display the close button
+      });
+    });
+
   </script>
 </head>
 <body>
 
-  <label for="datepicker">Select Date:</label>
+  <label for="datepicker">Prev Date:</label>
   <input type="text" id="datepicker">
+
+  <label for="ndatepicker">Next Date:</label>
+  <input type="text" id="ndatepicker">
 
 
 
